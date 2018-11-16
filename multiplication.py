@@ -1,10 +1,22 @@
-# Import stuff you need
+#!/usr/bin/python3
+'''
+multiplication.py
+
+This operates as the multiplication portion.
+I could easily throw all of this into one file or at least add the decimal
+portion to this in order to have it run all together, but I didn't.  Mostly
+simply because I didn't want to.
+'''
 import random
 
 
 def func():
+    '''
+    Randomly selects a pair of numbers and multiplies them.
+    I set the initial guess value to -1.
+    '''
     print("Welcome to the multiplication game.")
-    print("How well do you know your 2-12 multiplication tables?")
+    print("How well do you know your multiplication table?")
     print("If you want to quit early, press Q\n")
 
     for num in range(0,10):
@@ -31,6 +43,7 @@ def func():
                 print("Not a valid response")
     
     print("That's it, good work!")
+
 
 if __name__=="__main__":
     func()
